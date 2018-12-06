@@ -8,7 +8,7 @@ public class Cans extends Groceries{
 		// TODO Auto-generated constructor stub
 		setMoney(m); 
 		setName(n); 
-		setAmount(a); 
+		setAmount(); 
 	}
 	private void setAmount() { 
 		if(amount < 0 ) { 
@@ -28,20 +28,21 @@ public class Cans extends Groceries{
 			System.out.println(" We don't have that"
 					+ " canned item try soup, peas, or corn  ");	
 		}
-		public String getName() {
-			return name; 
+	}
+	public String getName() {
+		return name; 
+	}
+	public int getAmount() {
+		return amount; 
+	}
+	public void setMoney (int m) {
+		if( money >=0) {
+			money = m *2;
 		}
-		public int getAmount() {
-			return amount; 
-		}
-		private void setMoney(int m) {
-			if( stock >=0) {
-				money = m *2
-			}
-		}
+	}
 	public double getMoney() { 
 		return money; 
 	}
-	}	
+}	
 	
-}
+

@@ -12,9 +12,9 @@ public class Groceries {
 			System.out.println(" can't have negative cost "
 					+ " defaulting to 20$");
 			cost = 20; 
-		}
+		}}
 	public double getCost() { 
-		return Cost; 
+		return cost; 
 	}
 		
 	public String toString() { 
@@ -22,4 +22,4 @@ public class Groceries {
 				" $ "; 
 	}
 	}
-}
+
