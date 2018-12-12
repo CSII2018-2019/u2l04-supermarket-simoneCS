@@ -3,7 +3,7 @@ public class Groceries {
 	private double cost; 
 
 	public void Groceries(double c) {
-		// TODO Auto-generated constructor stub
+		// if public don't have to set and get 
 		setCost(c); 
 	}
 
